@@ -1,12 +1,13 @@
-
+import { iframeResizer } from 'iframe-resizer'
+console.log(iframeResizer);
 export default {
   bind() {
-    this.el.on('load', () => {
-      const iFrameHeight = `${element[0].contentWindow.document.body.scrollHeight}px`
-      element.css('height', iFrameHeight)
-    })
+    // util.on(this.el, 'load', () => {
+    //   const iFrameHeight = `${this.el[0].contentWindow.document.body.scrollHeight}px`
+    //   this.el.css('height', iFrameHeight)
+    // })
   },
   unbind() {
-    this.el.off('load')
+    // util.on(this.el, 'load')
   }
 }
